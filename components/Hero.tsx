@@ -4,7 +4,7 @@ import { HERO_BG } from '../constants';
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative h-screen min-h-[700px] w-full flex flex-col overflow-hidden">
+    <section className="relative min-h-[100svh] w-full flex flex-col overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
@@ -15,19 +15,19 @@ const Hero: React.FC = () => {
         <div className="absolute inset-0 hero-gradient"></div>
       </div>
 
-      <div className="relative z-10 flex-1 flex flex-col justify-center px-6 md:px-12 pt-20">
+      <div className="relative z-10 flex-1 flex flex-col justify-center px-6 md:px-12 pt-32 pb-20">
         <div className="max-w-4xl mx-auto md:mx-0">
           <div className="inline-flex items-center gap-2 bg-primary px-3 py-1 mb-6 rounded text-[10px] font-bold uppercase tracking-[0.2em] text-white animate-fade-in">
             <span className="material-icons text-[14px]">location_on</span>
             Proudly Serving Texas
           </div>
           
-          <h1 className="font-display text-4xl md:text-7xl lg:text-8xl text-white font-bold leading-[1.05] mb-8 uppercase italic tracking-tight text-shadow animate-slide-up">
+          <h1 className="font-display text-4xl md:text-7xl lg:text-8xl text-white font-bold leading-[1.05] mb-6 uppercase italic tracking-tight text-shadow animate-slide-up">
             Building Texas <br className="hidden md:block" /> Infrastructure <br/>
             <span className="text-primary italic">From The Ground Down</span>
           </h1>
           
-          <p className="text-lg md:text-2xl text-slate-200 leading-relaxed mb-10 max-w-2xl font-medium animate-slide-up" style={{ animationDelay: '0.2s' }}>
+          <p className="text-base md:text-2xl text-slate-200 leading-relaxed mb-8 max-w-2xl font-medium animate-slide-up" style={{ animationDelay: '0.2s' }}>
             The leading specialists in underground and aerial utility construction. From telecom fiber to industrial gas lines, we build the foundations of a connected Texas.
           </p>
           
@@ -48,19 +48,19 @@ const Hero: React.FC = () => {
         </div>
       </div>
 
-      {/* Bottom Features Strip */}
-      <div className="relative z-10 grid grid-cols-3 gap-px bg-white/5 backdrop-blur-md border-t border-white/10">
+      {/* Bottom Features Strip - Now allows flow if needed on very small screens */}
+      <div className="relative z-10 grid grid-cols-3 gap-px bg-black/40 backdrop-blur-md border-t border-white/10 mt-auto">
         <div className="p-4 md:p-8 flex flex-col items-center justify-center text-center group">
-          <span className="material-icons text-primary mb-2 text-2xl group-hover:scale-110 transition-transform">construction</span>
-          <span className="text-[10px] md:text-xs font-bold text-white uppercase tracking-widest">Excavation</span>
+          <span className="material-icons text-primary mb-2 text-xl md:text-2xl group-hover:scale-110 transition-transform">construction</span>
+          <span className="text-[9px] md:text-xs font-bold text-white uppercase tracking-widest">Excavation</span>
         </div>
         <div className="p-4 md:p-8 flex flex-col items-center justify-center text-center group">
-          <span className="material-icons text-primary mb-2 text-2xl group-hover:scale-110 transition-transform">cell_tower</span>
-          <span className="text-[10px] md:text-xs font-bold text-white uppercase tracking-widest">Fiber Optics</span>
+          <span className="material-icons text-primary mb-2 text-xl md:text-2xl group-hover:scale-110 transition-transform">cell_tower</span>
+          <span className="text-[9px] md:text-xs font-bold text-white uppercase tracking-widest">Fiber Optics</span>
         </div>
         <div className="p-4 md:p-8 flex flex-col items-center justify-center text-center group">
-          <span className="material-icons text-primary mb-2 text-2xl group-hover:scale-110 transition-transform">bolt</span>
-          <span className="text-[10px] md:text-xs font-bold text-white uppercase tracking-widest">Power & Gas</span>
+          <span className="material-icons text-primary mb-2 text-xl md:text-2xl group-hover:scale-110 transition-transform">bolt</span>
+          <span className="text-[9px] md:text-xs font-bold text-white uppercase tracking-widest">Power & Gas</span>
         </div>
       </div>
     </section>
