@@ -1,0 +1,7 @@
+{
+  "name": "TAMITCO - Underground Utilities",
+  "description": "Professional underground and aerial utility construction services specializing in telecom, water, gas, and electrical infrastructure across Texas.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
